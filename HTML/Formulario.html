@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="proceso.php" method="post">
+        Nombre: <input type="text" name="nombre">
+        <br>
+        Contraseña: <input type="password" name="pass" autofocus>
+        <br>
+        Comentario
+        <textarea name="Comentario" maxlength="4"></textarea>
+        <br>
+        <hr>
+        HOBBIES con checkbox
+        <br>
+        <input type="checkbox" name="Cine">Cine<br>
+        <input type="checkbox" name="Deportes">Deportes<br>
+        <input type="checkbox" name="Coches">F1<br>
+        <input type="checkbox" name="Cerveza" checked>Cerveza<br>
+        HOBBIES con radioButton
+        <br>
+        <input type="radio" name="Hobbie" value="1">Cine<br>
+        <input type="radio" name="Hobbie" value="2">Deportes<br>
+        <input type="radio" name="Hobbie" value="3">F1<br>
+        <input type="radio" name="Hobbie" value="4">Cerveza<br>
+
+        <hr>
+        Lista de HOBBIES<br>
+        <select name="hobbieslistas">
+            <option>Elija una opcion</option>
+            <option>Cine</option>
+            <option>Deportes</option>
+            <option>F1</option>
+            <option>Cerveza</option>
+        </select>
+        <hr>
+        Lista de HOBBIES con checkbox<br>
+        <select name="hobbieslistas">
+            <option>Elija una opcion</option>
+            <option value="1">Arte y entretenimiento</option>
+            <option value="2">TV y pelis</option>
+            <option value="3">F1</option>
+            <option value="4">Naturaleza</option>
+        </select>
+        <hr>
+        Lista de HOBBIES con checkbox multiple<br>
+        <select multiple name="categorias[]">
+            <option>Cine</option>
+            <option>Deportes</option>
+            <option>F1</option>
+            <option>Cerveza</option>
+        </select>
+        <p>
+            <input type="radio" name="sexo" value="h"> Hombre
+            <input type="radio" name="sexo" value="m"> Mujer
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        <input type="button" value="Hola Mundo" onclick="alert ('Hola Mundo!!!!!!!!!!!!!!!!')">
+    </form>
+</body>
+
+</html>

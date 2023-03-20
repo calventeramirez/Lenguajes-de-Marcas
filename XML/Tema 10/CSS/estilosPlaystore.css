@@ -1,0 +1,51 @@
+* {
+  display: block;
+}
+
+playstore {
+  background-color: aquamarine;
+}
+
+playstore::before {
+  content: "Playstore";
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+videojuego {
+  width: 200px;
+  background-color: lightcoral;
+  border-bottom: 5px solid coral;
+  margin-left: 5px;
+}
+
+titulo::before {
+  content: "Título: ";
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+precio::before {
+  content: "Precio: ";
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+pegi::before {
+  content: "PEGI: ";
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+genero::before {
+  content: "Genero: ";
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+descripcion::before {
+  content: "Descripción: ";
+  font-size: 1rem;
+  font-weight: bold;
+}

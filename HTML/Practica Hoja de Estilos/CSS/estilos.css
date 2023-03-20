@@ -1,0 +1,465 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../TIPOGRAFIA/Roboto-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: typewriter;
+  src: url("../TIPOGRAFIA/atwriter.ttf");
+}
+
+@font-face {
+  font-family: oldLondon;
+  src: url("../TIPOGRAFIA/OldLondon.ttf");
+}
+
+/*https://colorhunt.co/palette/86a3b8e8d2a6f48484f55050 paleta*/
+
+/*En todo el cuerpo*/
+* {
+  cursor: url(../IMG/herramientas-de-cocina.png), pointer;
+}
+
+/*header*/
+header {
+  width: 98%;
+}
+
+header > div {
+  width: 100%;
+  float: left;
+}
+
+header > nav > img {
+  max-width: 100px;
+  float: left;
+}
+
+header > nav > ul {
+  background-color: #f48484;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  font-family: oldLondon, typewriter, Roboto;
+}
+
+header > nav > ul > a > li {
+  display: inline-block;
+  width: 18%;
+  padding: 6px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+header > nav > ul a {
+  text-decoration: none;
+  color: #e8d2a6;
+  letter-spacing: 0.2rem;
+}
+
+header > nav > ul a:link {
+  color: #e8d2a6;
+}
+
+header > nav > ul a:visited {
+  color: purple;
+}
+
+header > nav > ul > a > li:hover {
+  background-color: #f55050;
+  transition: 0.5s;
+}
+
+header > nav > ul > a > li:active {
+  background-color: grey;
+}
+
+header > nav > ul a:focus {
+  background-color: grey;
+  color: yellow;
+}
+
+/*footer*/
+footer ul {
+  list-style-type: none;
+  background-color: #f55050;
+  width: 98%;
+  font-family: oldLondon, typewriter, Roboto;
+}
+
+footer ul li {
+  display: inline-block;
+  width: 10%;
+  padding: 10px;
+  text-align: center;
+}
+
+footer ul li a {
+  text-decoration: none;
+}
+
+footer ul li:hover {
+  background-color: #f48484;
+  transition: 0.5s;
+}
+
+footer ul li a:visited {
+  color: purple;
+}
+
+/*body*/
+body {
+  background-color: #86a3b8;
+}
+
+/*index*/
+/*la matriz de 2x2*/
+.matriz2x2 {
+  margin-top: 2%;
+  margin-left: 20%;
+  background-color: #e8d2a6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid #f48484;
+  border-width: 0.3em;
+  width: 60%;
+  height: 60%;
+}
+.matriz2x2 div {
+  font-family: Roboto, typewriter, oldLondon, Arial;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+}
+.matriz2x2 div p {
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.matriz2x2 div p::first-line {
+  text-transform: lowercase;
+}
+
+.matriz2x2 div p::first-letter {
+  text-transform: uppercase;
+}
+
+.matriz2x2 div img {
+  width: 100%;
+}
+
+/* parte de estudia con nosotros*/
+.estudiar h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: typewriter;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.estudiar section {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  line-height: 1.5rem;
+  background-image: url("../IMG/fondoporque.jpg");
+  background-size: cover;
+  border-style: dashed;
+  border-color: #f48484;
+  border-width: 5px;
+  padding: 5.2rem;
+  color: white;
+  font-family: typewriter;
+}
+
+.estudiar section div {
+  text-align: center;
+}
+
+.estudiar h3 {
+  background: linear-gradient(#f48484, pink);
+}
+
+/*Sobre nosotros*/
+.profesores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.profesores img {
+  height: 98%;
+  width: 98%;
+  border: 3px solid #f48484;
+  border-radius: 2%;
+}
+
+.lista {
+  border-top: 2px solid #f48484;
+  border-left: 2px solid #f48484;
+  border-right: 2px solid #f55050;
+  border-bottom: 2px solid #f55050;
+  background-color: #e8d2a6;
+  list-style-position: inside;
+  list-style-image: url("../IMG/comida-y-restaurante.png");
+}
+
+/*Clases*/
+.cursos {
+  margin-top: 2%;
+  border-top: 0.25rem solid #f48484;
+  border-left: 0.25rem solid #f48484;
+  border-right: 0.25rem solid #f55050;
+  border-bottom: 0.25rem solid #f55050;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.cursos caption {
+  caption-side: bottom;
+  background-color: #e8d2a6;
+}
+
+.cursos tbody tr td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.cursos thead th {
+  background-color: #f49d1a;
+}
+
+.cursos tbody tr td {
+  border: 0.2rem solid #367e18;
+  background-color: #b3ffae;
+}
+
+.cursos tbody tr:hover:nth-child(odd) td {
+  background-color: #f48484;
+  transition: 1s;
+}
+
+.cursos tbody tr:hover:nth-child(even) td {
+  background-color: #f55050;
+  transition: 1s;
+}
+
+.tutorias {
+  margin-top: 2%;
+  border-top: 0.25rem solid #f48484;
+  border-left: 0.25rem solid #f48484;
+  border-right: 0.25rem solid #f55050;
+  border-bottom: 0.25rem solid #f55050;
+  border-collapse: none;
+  width: 100%;
+  table-layout: fixed;
+  height: 100%;
+  border-spacing: 0.2rem;
+  empty-cells: hide;
+}
+
+.tutorias caption {
+  caption-side: top;
+  background-color: #e8d2a6;
+}
+
+.tutorias tbody tr td {
+  text-align: center;
+}
+
+.tutorias thead th {
+  background-color: #f49d1a;
+}
+
+.tutorias tbody tr td {
+  border: 0.2rem solid #367e18;
+  background-color: #b3ffae;
+}
+
+.tutorias tbody tr:first-child td {
+  border: 0.2rem solid #367e18;
+  background-color: purple;
+  color: aliceblue;
+}
+
+.tutorias tbody tr:last-child td {
+  border: 0.2rem solid #367e18;
+  background-color: green;
+  color: aliceblue;
+}
+
+.tutorias tbody tr:hover:nth-child(odd) td {
+  background-color: #f48484;
+}
+
+.tutorias tbody tr:hover:nth-child(even) td {
+  background-color: #f55050;
+}
+
+/*Formularios*/
+
+form {
+  margin-top: 2%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-top: 0.25rem solid #f48484;
+  border-left: 0.25rem solid #f48484;
+  border-right: 0.25rem solid #f55050;
+  border-bottom: 0.25rem solid #f55050;
+  background: radial-gradient(#a84a4a, #39a859);
+  padding-left: 2%;
+  padding-bottom: 2%;
+  border-radius: 1.5%;
+}
+
+#nombre,
+#email,
+#edad,
+#area {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid;
+}
+
+form input[type="submit"] {
+  border-radius: 40%;
+  margin-right: 2rem;
+  background-color: #86a3b8;
+  color: #fff;
+}
+
+form input[type="submit"]:hover {
+  box-shadow: 3px 2px 5px 2px #f55050;
+}
+
+form input[type="reset"] {
+  border-radius: 40%;
+  background-color: #86a3b8;
+  color: #fff;
+}
+
+form input[type="reset"]:hover {
+  box-shadow: 3px 2px 5px 2px #f55050;
+}
+
+.titulo {
+  text-align: center;
+  font-family: oldLondon;
+}
+
+.escribirAqui {
+  text-decoration: underline dashed;
+}
+
+/*avisos legales*/
+.aviso {
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 3px solid #f55050;
+  background-color: #e8d2a6;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.aviso p:first-child::before {
+  content: url("../IMG/p.png");
+}
+
+.aviso p:last-child::after {
+  content: url("../IMG/red-mundial.png");
+}
+
+.aviso p a:hover {
+  opacity: 0.2;
+}
+
+/*Privacidad*/
+.privacidad {
+  margin-top: 2%;
+  position: static;
+  margin-left: 10%;
+  box-sizing: border-box;
+  width: 80%;
+  border: 3px solid #f55050;
+  background-color: #e8d2a6;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*Blog*/
+
+.caja1 {
+  border: 1px solid green;
+  box-sizing: content-box;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  background-color: rgb(192, 40, 40);
+  top: 5px;
+  z-index: 0;
+}
+
+.caja1 img {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+}
+
+.caja2 {
+  border: 1px solid purple;
+  box-sizing: content-box;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  background-color: aliceblue;
+  left: 5rem;
+  bottom: 1.7rem;
+  z-index: 1;
+}
+
+.caja2 img {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+}
+
+.caja3 {
+  border: 1px solid gold;
+  box-sizing: content-box;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  background-color: antiquewhite;
+  bottom: 50px;
+  top: 5%;
+  left: 12%;
+  z-index: 2;
+}
+
+.caja3 img {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+}
+
+.caja4 {
+  border: 1px solid red;
+  box-sizing: content-box;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  background-color: green;
+  bottom: 9rem;
+  left: 20%;
+  z-index: 3;
+}
+
+.caja4 img {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+}

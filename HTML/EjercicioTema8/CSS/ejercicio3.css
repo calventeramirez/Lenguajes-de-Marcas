@@ -1,0 +1,40 @@
+.tabla-videojuegos caption, .tabla-comics caption {
+  background-color: yellow;
+  color: blue;
+  font-weight: bold;
+}
+.c1 {
+  caption-side: top;
+}
+
+.c2 {
+  caption-side: bottom;
+}
+
+.tabla-videojuegos, .tabla-comics{
+  border: 2px solid red;
+}
+
+.tabla-videojuegos th, .tabla-comics th {
+  color: red;
+}
+
+.tabla-videojuegos td, .tabla-comics td {
+  border: 2px solid blue;
+}
+
+.tabla-videojuegos td:hover, .tabla-comics td:hover{
+  background-color: lightblue;
+  transition-duration: 0.8s;
+}
+
+.tabla-videojuegos{
+  margin-bottom: 10px;
+}
+
+.tabla-comics{
+  /*border-collapse: collapse;*/
+  border-spacing: 0.5rem;
+  width: 50%;
+  table-layout: fixed;
+}

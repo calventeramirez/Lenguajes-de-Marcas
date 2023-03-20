@@ -1,0 +1,39 @@
+* {
+  display: block;
+}
+
+biblioteca {
+  background-color: lightblue;
+}
+
+biblioteca::before {
+  content: "Mis libros";
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+libro {
+  width: 200px;
+  background-color: lightcoral;
+  border-bottom: 5px solid coral;
+  margin-left: 5px;
+}
+
+titulo::before{
+    content: "Título: ";
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+autor::before {
+  content: "Autor: ";
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+paginas::before{
+    content: "Número de paginas: ";
+    font-size: 1rem;
+    font-weight: bold;
+}

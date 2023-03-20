@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Periódico SMART Málaga</title>
+  <meta charset="UTF-8" />
+  <meta name="author"
+    content="Pablo Jesús Calvente Ramírez, Alberto Florido Fernández de Córdoba & Victor Moreno Benítez" />
+  <meta name="keywords" content="periódico, noticias, deportes, investigación, actualidad, SMART, Málaga" />
+  <link rel="icon" type="image/x-icon" href="IMG/favicon.jpg" />
+  <link rel="stylesheet" type="text/css" href="estilos.css" />
+</head>
+
+<body>
+  <header>
+    <!--Cabecera de la pagina con el menu de navegación-->
+    <h1>Periódico SMART Málaga</h1>
+    <nav>
+      <ul class="navegacion">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Actualidad.html">Actualidad</a></li>
+        <li><a href="Deportes.html">Deportes</a></li>
+        <li><a href="Tecnologia.html">Tecnología</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--Cuerpo de la pagina, dentro estarán section, article y aside-->
+    <aside>
+      <fieldset>
+        <!--Donde esta la publicidad-->
+        <legend>Publicidad</legend>
+        <!--Buscar para meter alguna publicidad de verdad y enlazarla-->
+        <img src="IMG/cocacola.gif" alt="Publicidad Cocacola" />
+      </fieldset>
+    </aside>
+    <fieldset>
+      <legend><h1>Contacta con nosotros</h1></legend>
+
+      <form method="post" action="#">
+        <p>
+          <label for="nombre"> Nombre: </label>
+          <br />
+          <input id="nombre" type="text" name="nombre" placeholder="nombre" autofocus minlength="3" maxlength="12"
+            class="input" required />
+        </p>
+        <p>
+          <label for="email"> Email: </label><br /><input id="email" type="email" name="email"
+            placeholder="ejemplo@email.com" autofocus minlength="3" maxlength="30"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="input" required />
+        </p>
+        <p>
+          <label for="edad">Edad: </label><input id="edad" type="range" min="0" max="100"
+            oninput="mostrarRango.value = edad.value" /><output id="mostrarRango"></output>
+        </p>
+        <label for="genero">Género: </label>
+        <select id="genero" name="listaGenero">
+          <option>Elija una opción...</option>
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+          <option value="nsnc">No sabe / No contesta</option>
+        </select>
+        <p>
+        <h4><u>Escriba aquí el texto</u></h4>
+        <textarea name="area" rows="10" cols="50" required
+          autocomplete="on" placeholder="Escriba para que quiere contactarnos"></textarea>
+        </p>
+        <p>
+          <input type="checkbox" name="checkbox1" required /> He leído y
+          acepto los términos y condiciones de uso
+        </p>
+        <p>
+          <input type="checkbox" name="checkbox2" /> Quiero recibir publicidad
+          de la empresa todos los días
+        </p>
+
+        <hr />
+        <input type="submit" value="Enviar" class="button" />
+
+        <input type="reset" value="Borrar" class="button" />
+      </form>
+    </fieldset>
+
+    <div class="espacio"></div>
+  </main>
+  <footer>
+    <!--Pie de la pagina donde esta quienes somos etc-->
+    <ul class="pie">
+      <li>
+        <h4><a href="avisoslegales.html">Avisos legales</a></h4>
+      </li>
+      <li>
+        <h4><a href="quienessomos.html">Quiénes somos</a></h4>
+      </li>
+      <li>
+        <h4><a href="contacto.html">Contacto</a></h4>
+      </li>
+      <li>
+        <h4><a href="politicaPrivacidad.html">Política de Privacidad</a></h4>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>

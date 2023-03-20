@@ -1,0 +1,19 @@
+.p1 {
+  background-color: lightgrey;
+  font-family: Lucida Console, "Roboto", Times New Roman;
+}
+
+.p1::first-letter {
+  font-size: 2rem;
+}
+
+.p1::first-line {
+  text-transform: uppercase;
+}
+
+.p1::before {
+  content: "SINOPSIS:";
+  color: red;
+  background-color: yellow;
+  font-weight: bold;
+}

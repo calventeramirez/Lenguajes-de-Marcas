@@ -1,0 +1,9 @@
+<!ELEMENT playstore (videojuego)+>
+<!ELEMENT videojuego (titulo, precio, pegi, genero*, descripcion*)>
+<!ATTLIST videojuego consola CDATA #REQUIRED> 
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio descuento CDATA #IMPLIED>
+<!ELEMENT pegi (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>

@@ -1,0 +1,30 @@
+div.caja-1{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: 10px solid orangered;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 0;
+    display: none;
+}
+
+div.caja-2{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 10px solid blue;
+    position: relative;
+    top:0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+div.caja-flotante{
+    width: 2rem;
+    height: 2rem;
+    background-color: blueviolet;
+    float: left;
+}

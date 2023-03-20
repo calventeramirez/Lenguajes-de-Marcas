@@ -1,0 +1,172 @@
+p{
+    border: 0.5rem solid #0175c0;
+    background-color: #63bff0;
+    text-align: center;
+    min-width: 80%;
+    max-width: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-weight: bold;    
+    font-family: Roboto;
+}
+
+/*Tabla anime*/
+.animes{
+    margin-left:5%;
+    margin-right: 5%;
+    border-top: 0.25rem solid #e3e0e3;
+    border-left: 0.25rem solid #e3e0e3;
+    border-right: 0.25rem solid #e3e0e3;
+    border-bottom: 0.25rem solid #156ea9;
+    min-width: 90%;
+    max-width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    empty-cells: hide;
+    border-spacing: 0.5rem;
+    
+}
+
+.animes caption{
+    background-color: #a6d5ee;
+    color:#2a77a6;
+    text-decoration: underline;
+    caption-side: bottom;
+}
+
+
+.animes th{
+    color:blue;
+    background-color: #62c1f1;
+    margin:12px;
+}
+
+.animes tr:nth-child(odd){
+    background-color: #e0e3e3;
+    color: #909497;
+    margin:12px;    
+}
+
+.animes tr:nth-child(even){
+    background-color: #a7d5ee;
+    color: #5fa6c7;
+    margin: 12px;
+}
+
+/*listado h3*/
+h3{
+    margin-left: 5%;
+    margin-right: 5%;
+    color:#1277b0;
+    text-decoration: underline dashed;
+}
+
+/*ol1*/
+.plataformas{
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #7898aa;
+    list-style-type: upper-roman;
+    border-top: 0.25rem solid #e3e0e3;
+    border-left: 0.25rem solid #e3e0e3;
+    border-right: 0.25rem solid #156ea9;
+    border-bottom: 0.25rem solid #156ea9;
+    background-color: #a7d5ed;
+    min-width: 80%;
+    max-width: 90%;
+}
+
+
+/*tabla2*/
+.precios{
+    margin-right: 5%;
+    margin-left: 5%;
+    border-top: 0.25rem solid #e3e0e3;
+    border-left: 0.25rem solid #e3e0e3;
+    border-right: 0.25rem solid #e3e0e3;
+    border-bottom: 0.25rem solid #156ea9;
+    min-width: 90%;
+    max-width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.precios caption{
+    background-color: #a6d5ee;
+    color:#2a77a6;
+    text-decoration: underline;
+}
+
+.precios th{
+    color:blue;
+    background-color: #62c1f1;
+    margin:12px;
+    border-left: 0.2rem solid #e3e0e3;
+    border-right:0.2rem solid #e3e0e3;
+}
+
+.precios tr:nth-child(even){
+    background-color: #a7d5ee;
+    color: #5fa6c7;
+    margin: 12px;
+}
+
+.precios tr:nth-child(odd){
+    background-color: #e0e3e3;
+    color: #909497;
+    margin:12px;
+}
+
+.precios td{
+    border-right: 0.25rem solid #166e9c; 
+}
+
+/*Consideraciones*/
+.consideraciones{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top:  0.2rem solid #e3e0e3;
+    border-left: 0.2rem solid #e3e0e3;
+    border-bottom: 0.25rem solid #156ea9;
+    border-right: 0.25rem solid #156ea9;
+    background-color: #a7d5ed;
+    color: #7898aa;
+    line-height: 2.5rem;
+    min-width: 80%;
+    max-width: 900%;
+}
+
+/*Hovers las dos tablas*/
+.animes tr:nth-child(odd):hover, .precios tr:nth-child(odd):hover{
+    background-color: red;
+    color: white;
+}
+
+.animes tr:nth-child(even):hover, .precios tr:nth-child(even):hover{
+    background-color: green;
+    color: black;
+}
+
+
+/*enlaces*/
+a:link{
+    color:blue;
+}
+
+a:focus{
+    background-color: gray;
+}
+
+a:visited{
+    text-decoration: none;
+    color: purple;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    background-color: green;
+}

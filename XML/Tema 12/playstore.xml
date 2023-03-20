@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./CSS/estilosPlaystore.css" type="text/css"?>
+<!DOCTYPE playstore SYSTEM "./DTDs/playstore.dtd">
+<playstore> <!--Tiene uno o mas videojuegos-->
+  <videojuego consola="ps4">
+    <titulo>Fifa 23</titulo>
+    <precio>39.99€</precio>
+    <pegi>3</pegi>
+    <genero>Deportes</genero>
+    <genero>Simulador</genero>
+  </videojuego>
+  <videojuego consola="ps5">
+    <titulo>Hogwarts Legacy</titulo>
+    <precio>74.99€</precio>
+    <pegi>12</pegi>
+    <genero>Unicos</genero>
+    <descripcion>Este juego es de Harry Potter</descripcion> <!--Descripcion es opcional-->
+  </videojuego>  
+  <videojuego consola="ps5">
+    <titulo>Forspoken</titulo>
+    <precio>79.99€</precio>
+    <pegi>18</pegi>
+    <genero>Acción</genero> <!--Genero hay siempre 0 o mas generos-->
+    <genero>Juego de Rol</genero>
+  </videojuego>
+  <videojuego consola="ps4">
+    <titulo>Kena: Bridge of Spirits</titulo>
+    <precio descuento="50%">17.99€</precio> <!--Descuento es opcional-->
+    <pegi>12</pegi>
+    <genero>Acción</genero>
+    <genero>Aventura</genero>
+  </videojuego>
+</playstore>

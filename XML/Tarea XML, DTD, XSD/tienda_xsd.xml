@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tienda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./XSD/tienda.xsd">
+    <producto productoID="1000">
+        <nombre>La cosa del pantano de Alan Moore Vol.3</nombre>
+        <marca>ECC</marca>
+        <precio>40.85</precio>
+        <edadRecomendada>+13</edadRecomendada>
+        <categoria>comic</categoria>
+        <descuento>5</descuento>
+    </producto>
+
+    <producto productoID ="1001">
+        <nombre>One Piece Volumen 101</nombre>
+        <marca>Planeta</marca>
+        <precio>7.95</precio>
+        <edadRecomendada>+13</edadRecomendada>
+        <categoria>manga</categoria>
+        <descuento>0</descuento>
+    </producto>
+
+    <producto productoID="1002">
+        <nombre>Dragon Ball Super Volumen 5</nombre>
+        <marca>Planeta</marca>
+        <precio>7.55</precio>
+        <pegi>PEGI 16</pegi>
+        <categoria>manga</categoria>
+        <descuento>2</descuento>
+    </producto>
+
+    <producto productoID="1003">
+        <nombre>Los hombres lobo de Castronegro</nombre>
+        <marca>Zygomatic</marca>
+        <precio>9.99</precio>
+        <pegi>PEGI 3</pegi>
+        <categoria>juego de mesa</categoria>
+        <descuento>9</descuento>
+    </producto>
+</tienda>

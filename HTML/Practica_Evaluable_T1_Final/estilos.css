@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  background-color: #eee2dc;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+::selection {
+  background-color: purple;
+  color: whitesmoke;
+}
+
+.navegacion {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkseagreen;
+}
+
+.navegacion li {
+  display: inline-flex;
+  float: left;
+}
+.navegacion li a {
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navegacion li a:hover {
+  background-color: purple;
+  color: whitesmoke;
+}
+
+.volver {
+  color: gray;
+  padding: 16px;
+}
+
+.pie {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkseagreen;
+  width: 100%;
+  height: max-content;
+}
+
+.pie li {
+  display: inline-flex;
+  float: left;
+}
+.pie li a {
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.pie li a:hover {
+  background-color: purple;
+  color: whitesmoke;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+legend {
+  border: none;
+}
+
+.titulo {
+  margin-left: 2%;
+  color: purple;
+}
+
+header h1 {
+  text-align: center;
+  color: purple;
+}
+
+aside {
+  float: right;
+  background-color: #eee2dc;
+  position: sticky;
+  margin-top: 60px;
+  margin-right: 3%;
+  top: 15%;
+}
+
+section {
+  width: 70%;
+  margin: 3%;
+}
+
+fieldset {
+  background-color: white;
+}
+
+.espacio {
+  display: block;
+  padding: 50px;
+  margin-top: 30px;
+}
+
+.sinvinculo {
+  color: black;
+  text-decoration: none;
+}
+
+/*Para las tablas*/
+table {
+  border-collapse: collapse;
+}
+tr,
+td {
+  border: solid 1px;
+  text-align: center;
+}
+
+.trPrincipal {
+  background-color: darkseagreen;
+  color: whitesmoke;
+}
+.trPrincipal td:first-child {
+  background-color: white;
+  border: none;
+}
+.tdi {
+  background-color: purple;
+  color: whitesmoke;
+}
+
+.fieldsettexto {
+  float: right;
+  width: 78%;
+}
+.fieldsetimagen {
+  float: left;
+  width: 20%;
+  height: "150px";
+  width: "300px";
+}
+
+
+/*Para boton del formulario*/
+.button{
+  padding: 1%;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  background-color: darkseagreen;
+  border: solid 1px;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover{
+  background-color: purple;
+  color: white;
+
+}
+
+/*Para el formulario*/
+.input{
+  font-size: 16px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+}
+
+.input:focus, .input:hover{
+  outline: none;
+  border-radius: 3rem;
+  border-color: black;
+  transition: .3s;
+}

@@ -1,0 +1,45 @@
+div.caja_padre{
+    width: 200px;
+    height: 200px;
+    background: aqua;
+    border:10px solid blue;
+    position: sticky;
+    top:50px;
+}
+
+.caja_hija{
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+    border:10px solid orange;
+    box-sizing: border-box;
+}
+
+ul.menu_horizontal{
+    background-color: olivedrab;
+    padding: 10px;
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+ul.menu_horizontal li{
+    display: inline;
+    margin: 10px;
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+ul.menu_horizontal a{
+    color: olivedrab;
+    text-decoration: none;
+}
+
+ul.menu_horizontal  li:hover{
+    background-color: olivedrab;
+    transition-duration: 1s;
+}
+
+ul.menu_horizontal  li:hover a{
+    color: yellowgreen;
+}

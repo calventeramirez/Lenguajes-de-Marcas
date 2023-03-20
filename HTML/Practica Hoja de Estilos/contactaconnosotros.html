@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacta con nosotros</title>
+    <link type="text/css" rel="stylesheet" href="./CSS/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./IMG/logo.png" alt="Logo de la pagina" />
+        <ul>
+          <a href="./index.html"><li><img src="./IMG/casa.png" alt="Logo Casa"/></li></a>
+          <a href="./blog.html"><li>Blog</li></a>
+          <a href="./clases.html"><li>Clases</li></a>
+          <a href="./sobrenosotros.html"><li>Sobre nosotros</li></a>
+          <a href="./contactaconnosotros.html"><li>Contacta con nosotros</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo">Formulario</h1>
+      <form method="post" action="">
+        <p>
+          <label for="nombre"> Nombre: </label>
+          <input
+            id="nombre"
+            type="text"
+            name="nombre"
+            placeholder="nombre"
+            autofocus
+            minlength="3"
+            maxlength="12"
+            class="input"
+            required
+          />
+        </p>
+        <p>
+          <label for="email"> Email: </label><input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="ejemplo@email.com"
+            minlength="3"
+            maxlength="30"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            class="input"
+            required
+          />
+        </p>
+        <p>
+          <label for="edad">Edad: </label
+          ><input
+            id="edad"
+            type="text" placeholder="Edad" minlength="1" maxlength="2" class="input"/><output id="mostrarRango"></output>
+        </p>
+        <label for="genero">Género: </label>
+        <select id="genero" name="listaGenero">
+          <option>Elija una opción...</option>
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+          <option value="nsnc">No sabe / No contesta</option>
+        </select>
+
+        <h4 class="escribirAqui">Escriba aquí el texto</h4>
+        <textarea
+          name="area"
+          rows="10"
+          cols="50"
+          id="area"
+          required
+          autocomplete="on"
+          placeholder="Escriba para que quiere contactarnos"
+        ></textarea>
+
+        <p>
+          <input type="checkbox" name="checkbox1" required /> He leído y acepto
+          los términos y condiciones de uso
+        </p>
+        <p>
+          <input type="checkbox" name="checkbox2" /> Quiero recibir publicidad
+          de la empresa todos los días
+        </p>
+
+        <hr />
+        <input type="submit" value="Enviar" class="button" />
+
+        <input type="reset" value="Borrar" class="button" />
+      </form>
+    </main>
+    <footer>
+      <ul>
+          <a href="./avisoslegales.html"><li>Avisos Legales</li></a>
+          <a href="./privacidad.html"><li>Política de privacidad</li></a>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+p{
+    
+    overflow: auto;
+}
+
+ul{
+    background-color: black;
+    padding: 1rem;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+}
+
+ul li{
+    display: inline;
+    padding: 1rem;
+    background-color: green;
+}
+
+ul li:hover{
+    background-color: darkgreen;
+}
+
+ul li a:link{
+    color: white;
+    text-decoration: none;
+}
+
+#caja-1{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid green;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    z-index: 1;
+}
+#caja-2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 2px solid red;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    z-index: 0;
+}
+#caja-3{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border: 2px solid orange;
+    position: fixed;
+    left: 50px;
+    top: 50px;
+}
