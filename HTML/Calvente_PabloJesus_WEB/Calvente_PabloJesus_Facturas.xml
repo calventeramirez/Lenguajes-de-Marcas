@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tienda>
+    <factura dni ="">
+        <producto proveedor = "" tipo="" nacional ="">
+            <marca></marca>
+            <nombre></nombre>
+            <tipo></tipo>
+            <componentes></componentes><!--pueden ser varios-->
+            <tamano></tamano><!--o peso-->
+            <precio></precio>
+            <observaciones></observaciones> <!--pueden existir o no-->
+        </producto><!--Uno o más-->
+        <formulario dni="">
+            <nombreCliente></nombreCliente>
+            <apellidoCliente></apellidoCliente>
+            <email></email>
+            <movil></movil> <!--Pueden ser varios-->
+            <fijo></fijo><!--1 o mas-->
+            <domicilio></domicilio>
+            <fechaNacimiento></fechaNacimiento>
+            <dni></dni>
+            <sexo></sexo>
+            <observaciones></observaciones><!--puede existir o no-->
+        </formulario><!--Uno o mas-->
+        <fechaEnvio modoEnvio="">
+
+        </fechaEnvio><!--Solo uno-->
+    </factura>
+</tienda>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<producto>
+    <marca></marca>
+    <nombre></nombre>
+    <tipo></tipo>
+    <componentes></componentes>
+    <tamano></tamano>
+    <precio></precio>
+    <observaciones></observaciones>
+</producto>

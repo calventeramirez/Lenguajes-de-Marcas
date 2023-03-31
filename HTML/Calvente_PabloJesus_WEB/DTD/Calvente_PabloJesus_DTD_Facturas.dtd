@@ -1,0 +1,29 @@
+<!ELEMENT tienda (factura)+>
+<!ELEMENT factura (producto+, formulario+, fechaEnvio)>
+<!ATTLIST fatura dni CDATA #REQUIRED>
+<!ELEMENT producto (marca, nombre, tipo, componentes+, (tamano|peso), precio, observaciones?)+>
+<!ATTLIST producto proveedor CDATA #REQUIRED>
+<!ATTLIST producto tipo CDATA #REQUIRED>
+<!ATTLIST producto nacional CDATA #REQUIRED>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT componentes (#PCDATA)>
+<!ELEMENT tamano (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+<!ELEMENT formulario (nombreCliente, apellidoCliente, email, movil+, fijo+, domicilio, fechaNacimiento, dni, sexo, observaciones?)+>
+<!ATTLIST formulario dni CDATA #REQUIRED>
+<!ELEMENT nombreCLiente (#PCDATA)>
+<!ELEMENT apellidoCliente (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT movil (#PCDATA)>
+<!ELEMENT fijo (#PCDATA)>
+<!ELEMENT domicilio (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+<!ELEMENT fechaEnvio (#PCDATA)>
+<!ATTLIST fechaEnvio modoEnvio CDATA #REQUIRED>
