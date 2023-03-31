@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   font-family: Roboto;
 }
@@ -7,18 +7,18 @@ header {
   width: 101%;
 }
 
-#logo{
+#logo {
   text-align: center;
 }
 
-#logo h1{
+#logo h1 {
   font-size: 50px;
 }
 
-header > nav{
+header > nav {
   width: 101%;
   margin: 50px 0;
-  background: #0AFCC0;
+  background: #0afcc0;
   text-align: center;
 }
 
@@ -29,79 +29,80 @@ header > nav ul {
 }
 
 header > nav ul li {
-  background-color: #0AFCC0;
+  background-color: #0afcc0;
   display: inline-block;
   position: relative;
   margin: 1%;
-  padding:0;
+  padding: 0;
 }
 
-header > nav ul li:hover{
-    background-color: #02DFE6;
+header > nav ul li:hover {
+  background-color: #02dfe6;
 }
 
-header>nav ul a{
-    display: block;
-    text-decoration: none;
-    padding: 2%;
-    text-transform: uppercase;
+header > nav ul a {
+  display: block;
+  text-decoration: none;
+  padding: 2%;
+  text-transform: uppercase;
 }
 
-header > nav ul ul{
-    display: none;
-    position: absolute;
-    top:100%;
-    left: 0;
-    background: #0AFCC0;
-    padding: 0;
+header > nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #0afcc0;
+  padding: 0;
 }
 
 header > nav ul ul li {
-  display: block;  
+  display: block;
   float: none;
-  width:10%;
+  width: 10%;
 }
 
-header >nav ul ul a{
-    line-height: 120%;
-    padding: 10%;
+header > nav ul ul a {
+  line-height: 120%;
+  padding: 10%;
 }
 
-header > nav li:hover>ul{
-    display: block;
-    background: #02DFE6;
+header > nav li:hover > ul {
+  display: block;
+  background: #02dfe6;
 }
 
 /*MAIN*/
-#tableh1{
+#tableh1 {
   text-align: center;
   font-size: 50px;
   margin-bottom: 50px;
 }
 
-table{
+table {
   margin: 0;
   border-collapse: collapse;
   width: 80%;
   max-width: 600px;
-  box-shadow: 0 0 20px rgba(0,0,1,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 1, 0.2);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
 }
 
-table th, td{
+table th,
+td {
   padding: 10px;
   text-align: center;
-  border: 2px solid #02DFE6;
+  border: 2px solid #02dfe6;
 }
 
-tr:nth-child(even){
-  background-color: #0AFCC0;
+tr:nth-child(even) {
+  background-color: #0afcc0;
 }
 
 /*Formulario*/
-.formulario{
+.formulario {
   background-color: white;
   padding: 3.1em;
   width: 50%;
@@ -110,12 +111,12 @@ tr:nth-child(even){
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 5px 5px 15px -1px rgba(0,0,1,0.7);
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 1, 0.7);
   margin-bottom: 2em;
 }
 
-.spanContatanos{
-  color: rgb(77,75,76);
+.spanContatanos {
+  color: rgb(77, 75, 76);
   text-transform: uppercase;
   letter-spacing: 3px;
   display: block;
@@ -124,35 +125,49 @@ tr:nth-child(even){
   margin-bottom: 1em;
 }
 
-.entrada{
+.entrada {
   width: 100%;
   margin-bottom: 1em;
   height: 45px;
   border-radius: 10px;
-  border: 2px solid #0AFCC0;
+  border: 2px solid #0afcc0;
   padding: 0.5em;
   outline: none;
 }
 
-.entrada:focus{
-  border: 2px solid #02DFE6;
+.entrada:focus {
+  border: 2px solid #02dfe6;
   outline: none;
 }
 
-.boton{
+.boton {
   margin-top: 2em;
   width: 50%;
   padding: 0.5em;
   border-radius: 5px;
-  color:white;
-  background-color: #0AFCC0;
-  border: 1px solid #0AFCC0;
+  color: white;
+  background-color: #0afcc0;
+  border: 1px solid #0afcc0;
   cursor: pointer;
 }
 
-.boton:hover{
+.boton:hover {
   background-color: white;
-  color: #0AFCC0;
+  color: #0afcc0;
   cursor: pointer;
   transition: 0.3s;
+}
+
+/*Inicio*/
+.inicio {
+  background-color: white;
+  padding: 3.1em;
+  width: 50%;
+  margin-left: 24em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 1, 0.7);
+  margin-bottom: 2em;
 }
