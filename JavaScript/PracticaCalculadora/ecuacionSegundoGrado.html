@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuacion de segundo grado</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var a, b, c;
+        a = prompt("Introduzca el valor del primer operando: ");
+        b = prompt("Introduzca el valor del segundo operando: ");
+        c = prompt("Introduzca el valor del tercer operando: ");
+        document.write("La ecuacion es: "+a+"x^2+"+b+"x+"+c);
+        var discriminante = Math.pow(b, 2) - 4 * a * c;
+        var resultado;
+        if (discriminante == 0) {//una solucion;
+            resultado = -b / (2 * a);
+            document.write("Doble Resultado: " + resultado);
+        } else {
+            resultado = (-b + Math.pow(discriminante, (1 / 2))) / (2 * a);
+            document.write("Primer valor: " + resultado);
+            resultado = (-b - Math.pow(discriminante, (1 / 2))) / (2 * a);
+            document.write("Segundo valor: " + resultado)
+        }
+    </script>
+</body>
+
+</html>
