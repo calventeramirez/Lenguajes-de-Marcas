@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas de los Alumnos</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var nombres = [];
+        var notas = [];
+        var suspenso = 0;
+        var aprobado = 0;
+        for (num = 0; num < 5; num++) {
+            nombres[num] = prompt("Introduzca el nombre del alumno: ");
+            notas[num] = prompt("Introduzca la nota del alumno: ");
+        }
+
+        for (num = 0; num < 5; num++) {
+            document.write(nombres[num] + " ha sacado un " + notas[num] + ". ");
+            switch (parseInt(notas[num])) {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    supenso = suspenso + 1;
+                    document.write("SUSPENSO.<br>");
+                    break;
+                case 5:
+                case 6:
+                    aprobado = aprobado + 1;
+                    document.write("APROBADO.<br>");
+                    break;
+                case 7:
+                case 8:
+                    aprobado = aprobado + 1;
+                    document.write("NOTABLE. <br>");
+                    break;
+                case 9:
+                case 10:
+                    aprobado = aprobado + 1;
+                    document.write("SOBRESALIENTE. <br>");
+                    break;
+                default:
+                    alert("FALLO EN LA MATRIX \n");
+            }
+        }
+        document.write("El numero de aprobados es : "+aprobado+" y el numero de suspensos son: "+suspenso);
+    </script>
+</body>
+
+</html>
