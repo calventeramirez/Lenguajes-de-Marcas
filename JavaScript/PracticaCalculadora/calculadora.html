@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var operacion;
+        var salir = "";
+        do {
+            operacion = prompt("Introduzca la operacion a realizar. Sumar, restar, multiplicacion, division o Comparar, si deseas salir use la palabra SALIR");
+            if (operacion != "SALIR") {
+                var num1 = prompt("Introduzca el primer numero");
+                var num2 = prompt("Introduzca el segundo valor");
+                if (operacion === "+" || operacion === "sumar") {
+                    var suma = parseInt(num1) + parseInt(num2);
+                    alert("El resultado de la suma es: " + suma);
+                    salir = "El resultado de la suma es: " + suma;
+                } else if (operacion === "-" || operacion === "restar") {
+                    var resta = parseInt(num1) - parseInt(num2);
+                    alert("El resultado de la resta es: " + resta);
+                    salir = "El resultado de la resta es: " + resta;
+                } else if (operacion === "*" || operacion === "multiplicacion") {
+                    var multiplicacion = parseInt(num1) * parseInt(num2);
+                    alert("El resultado de la multiplicacion es: " + multiplicacion);
+                    salir = "El resultado de la multiplicacion es: " + multiplicacion;
+                } else if (operacion === "/" || operacion === "division") {
+                    var div = 0;
+                    if (parseInt(num2) != 0) {
+                        div = parseInt(num1) / parseInt(num2);
+                    }
+                    alert("El resultado de la division es: " + div);
+                    salir = "El resultado de la division es: " + div;
+                } else if (operacion == "Comparar") {
+                    if (parseInt(num1) > parseInt(num2)) {
+                        alert("El resultado de la comparacion es: el numero " + num1 + " es mayor que " + num2);
+                        salir = "El resultado de la comparacion es: el numero " + num1 + " es mayor que " + num2;
+                    } else if (parseInt(num1) < parseInt(num2)) {
+                        alert("El resultado de la comparacion es: el numero " + num1 + " es menor que " + num2);
+                        salir = "El resultado de la comparacion es: el numero " + num1 + " es menor que " + num2;
+                    } else {
+                        alert("El resultado de la comparacion es: el numero " + num1 + " es igual que " + num2);
+                        salir = "El resultado de la comparacion es: el numero " + num1 + " es igual que " + num2;
+                    }
+                }
+            }
+        } while (operacion != "SALIR");
+        document.write(salir);
+    </script>
+</body>
+
+</html>
