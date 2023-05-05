@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario</title>
+
+    <style type="text/css">
+        body {
+            font-family: arial, helvetica;
+        }
+
+        form {
+            width: 600px;
+            margin: 20px auto 0 auto;
+        }
+
+        label {
+            float: left;
+            width: 200px;
+            font-weight: bold;
+        }
+
+        label[for="registro_condiciones"] {
+            float: none;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 360px;
+        }
+
+        input[type="checkbox"] {
+            margin-left: 200px;
+        }
+
+        input[type="submit"] {
+            margin: 20px 0 0 200px;
+            display: block;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function validacion() {
+            let nomb = document.getElementById("registro_nombre").value;
+            let bolnom = true;
+            let ema = document.getElementById("registro_email");
+            let bolema = true;
+            var validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+            let com = document.getElementById("registro_comentarios").value;
+            let bolcom = true;
+            let pass = document.getElementById("registro_password");
+            var validPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}$/;
+            let condiciones = document.getElementById("registro_condiciones");
+
+            if (nomb.length == 0) {
+                bolnom = false;
+            }
+
+            if (!validEmail.test(ema.value)) {
+                bolema = false;
+            }
+
+            if (com.length == 0 || com.length >= 51) {
+                bolcom = false;
+            }
+
+            if (!validPass.test(pass.value)) {
+                alert("Error en el password");
+                return false;
+            }
+
+            if (!condiciones.checked) {
+                alert("Error marque la opcion de acepta las condiciones");
+                return false;
+            }
+
+            if (!bolnom || !bolema || !bolcom) {
+                alert("Faltan los campos de nombre o email(puede ser que no contenga el @ el email) o comentarios");
+                return false;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form action="" method="POST" id="registro" onsubmit="return validacion()">
+        <fieldset>
+            <legend>Registro</legend>
+            <label for="registro_nombre">
+                Nombre:
+            </label>
+            <input type="text" name="nombre" id="registro_nombre" />
+
+            <label for="registro_apellidos">
+                Apellido:
+            </label>
+            <input type="text" name="apellido" id="registro_apellido" />
+
+            <label for="registro_email">
+                Email:</label>
+            <input type="text" name="email" id="registro_email" />
+
+            <label for="registro_password">
+                Password:
+            </label>
+            <input type="password" name="password" id="registro_password" />
+
+            <label for="registro_comentarios">
+                Comentarios:
+            </label>
+            <textarea name="comentarios" id="registro_comentarios">
+			</textarea>
+
+            <input type="checkbox" name="condiciones" id="registro_condiciones" value="1" />
+
+            <label for="registro_condiciones">
+                Acepto las condiciones del servicio.</label>
+
+            <input type="submit" value="Enviar" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
