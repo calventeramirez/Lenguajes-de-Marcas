@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar</title>
+    <script type="text/javascript">
+        function cambiar() {
+            var boton = document.getElementsByTagName("input")[0];
+            var tit = document.getElementById("titulo");
+            var cuer = document.getElementsByTagName("body")[0];
+            if (boton.value === "Cambiado") {
+                tit.style.border = 0;
+                tit.style.textAlign = "left";
+                tit.style.boxShadow = "0px 0px 0px white";
+
+                boton.value = "Cambiar";
+                boton.style.backgroundColor = "white";
+
+                cuer.style.backgroundColor = "white";
+                cuer.style.color = "black";
+
+                document.getElementById("duracion");
+                innerText = 129;
+            } else {
+                tit.style.border = "solid 2px chocolate";
+                tit.style.textAlign = "center";
+                tit.style.boxShadow = "10px 10px 10px grey";
+
+                boton.value = "Cambiado";
+                boton.style.backgroundColor = "white";
+
+                cuer.style.backgroundColor = "black";
+                cuer.style.color = "white";
+
+                document.getElementById("duracion");
+                innerText = 128;
+            }
+
+        }
+
+        function raton(elemento) {
+            var dur = document.getElementById("duracion");
+            if (dur.style.fontSize === "4rem") {
+                dur.style.fontSize = "1.5rem";
+            } else {
+                dur.style.fontSize = "4rem";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="titulo" onmouseover="raton()">Desarrollo de Aplicaciones<br>Multiplataforma/Web</h1>
+    <h2 id="modulo">Módulo: Lenguaje de Marcas</h2>
+    <h2>Duración: <span id="duracion">129</span> horas</h2>
+    <input type="button" value="Cambiar" onclick="cambiar()">
+</body>
+
+</html>
